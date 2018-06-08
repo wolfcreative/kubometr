@@ -7,4 +7,9 @@ $(function() {
       };
   });
   $(".category h3").height(maxHeight);
+
+  $(".product>.wrapper").each(function () {
+    var heightBlock = $(this).height()
+    $(this).css('height',heightBlock)
+  });
 });
